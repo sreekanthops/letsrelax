@@ -54,7 +54,6 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<div class="center-container">
 			<div class="container">
 				<div class="navigation">
-
 					<div class="navigation-right">
 						<span class="menu"><img src="images/menu.png" alt=" " /></span>
 						<nav class="link-effect-4" id="link-effect-4">
@@ -529,7 +528,18 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			</div>
 		</div>
 	</div>
-<!-- //mail -->
-<!-- //here ends scrolling icon -->
+	<script>
+		window.watsonAssistantChatOptions = {
+		  integrationID: "3d2ff8f8-1b73-456d-b441-6bbb7d4ccf1f", // The ID of this integration.
+		  region: "us-east", // The region your integration is hosted in.
+		  serviceInstanceID: "1a9fac92-655f-4ae7-8e5d-26c737f1b098", // The ID of your service instance.
+		  onLoad: function(instance) { instance.render(); }
+		};
+		setTimeout(function(){
+		  const t=document.createElement('script');
+		  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+		  document.head.appendChild(t);
+		});
+	  </script>
 </body>
 </html>
